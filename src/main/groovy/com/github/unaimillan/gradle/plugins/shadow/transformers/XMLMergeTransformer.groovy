@@ -80,14 +80,16 @@ class XMLMergeTransformer implements Transformer {
                 Element mergedEl = doc.getRootElement()
                 Attribute mergedAtt = mergedEl.getAttribute(a.getName(), a.getNamespace())
                 if (mergedAtt == null) {
-                    Attribute attrCopy = a.clone()
-                    attrCopy.detach()
-                    mergedEl.setAttribute(attrCopy)
+                    Attribute attr = a.clone()
+                    attr.detach()
+                    mergedEl.setAttribute(attr)
                 }
             }
 
             root.children.each { Content n ->
-                doc.getRootElement().addContent(n.clone())
+                Content content = n.clone()
+                content.detach()
+                doc.getRootElement().addContent(content)
             }
         }
     }
