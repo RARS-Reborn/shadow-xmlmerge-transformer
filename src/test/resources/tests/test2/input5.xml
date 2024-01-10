@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qtjambi-deploy compiler="msvc2022x64" configuration="release" module="qtjambi.uic" system="windows-x64" version="6.6.1">
+    <file name="include/QtJambiUIC/QtJambiUIC"/>
+    <file name="include/QtJambiUIC/QtJambiUICDepends"/>
+    <file name="include/QtJambiUIC/QtJambiUICVersion"/>
+    <file name="include/QtJambiUIC/version.h"/>
+    <library name="bin/QtJambiUIC6.dll"/>
+</qtjambi-deploy>

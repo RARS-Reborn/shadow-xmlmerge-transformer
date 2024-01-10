@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qtjambi-deploy configuration="release" module="qt.lib.gui" system="windows-x64" version="6.6.1">
+    <library name="bin/Qt6Gui.dll"/>
+    <library name="plugins/generic/qtuiotouchplugin.dll"/>
+    <library name="plugins/imageformats/qgif.dll"/>
+    <library name="plugins/imageformats/qico.dll"/>
+    <library name="plugins/imageformats/qjpeg.dll"/>
+    <library name="plugins/platforms/qdirect2d.dll"/>
+    <library name="plugins/platforms/qminimal.dll"/>
+    <library name="plugins/platforms/qoffscreen.dll"/>
+    <library name="plugins/platforms/qwindows.dll"/>
+</qtjambi-deploy>

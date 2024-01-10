@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qtjambi-deploy configuration="release" module="qt.lib.widgets" system="windows-x64" version="6.6.1">
+    <library name="bin/Qt6Widgets.dll"/>
+    <library name="plugins/styles/qwindowsvistastyle.dll"/>
+</qtjambi-deploy>
