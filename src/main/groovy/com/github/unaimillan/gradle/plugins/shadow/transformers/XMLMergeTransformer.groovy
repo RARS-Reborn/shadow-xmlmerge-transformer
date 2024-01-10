@@ -3,18 +3,13 @@ package com.github.unaimillan.gradle.plugins.shadow.transformers
 import com.github.jengelman.gradle.plugins.shadow.transformers.CacheableTransformer
 import com.github.jengelman.gradle.plugins.shadow.transformers.Transformer
 import com.github.jengelman.gradle.plugins.shadow.transformers.TransformerContext
-
-import org.apache.tools.zip.ZipOutputStream
 import org.apache.tools.zip.ZipEntry
-
+import org.apache.tools.zip.ZipOutputStream
 import org.gradle.api.file.FileTreeElement
 import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.Optional
-import org.jdom2.Attribute
-import org.jdom2.Content
-import org.jdom2.Document
-import org.jdom2.Element
-import org.jdom2.JDOMException
+import org.jdom2.*
 import org.jdom2.input.SAXBuilder
 import org.jdom2.output.Format
 import org.jdom2.output.XMLOutputter
@@ -107,6 +102,7 @@ class XMLMergeTransformer implements Transformer {
         doc = null
     }
 
+    @Internal
     byte[] getTransformedResource()
             throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream(1024 * 4)
