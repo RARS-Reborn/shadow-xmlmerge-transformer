@@ -8,7 +8,7 @@ import org.custommonkey.xmlunit.XMLUnit
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.TestFactory
-import shadow.org.jdom2.IllegalAddException
+import org.jdom2.IllegalAddException
 
 import java.util.stream.Stream
 

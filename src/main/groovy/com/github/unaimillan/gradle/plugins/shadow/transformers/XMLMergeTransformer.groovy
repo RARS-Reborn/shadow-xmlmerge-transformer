@@ -4,8 +4,8 @@ import com.github.jengelman.gradle.plugins.shadow.transformers.CacheableTransfor
 import com.github.jengelman.gradle.plugins.shadow.transformers.Transformer
 import com.github.jengelman.gradle.plugins.shadow.transformers.TransformerContext
 
-import shadow.org.apache.tools.zip.ZipOutputStream
-import shadow.org.apache.tools.zip.ZipEntry
+import org.apache.tools.zip.ZipOutputStream
+import org.apache.tools.zip.ZipEntry
 
 import org.gradle.api.file.FileTreeElement
 import org.gradle.api.tasks.Input

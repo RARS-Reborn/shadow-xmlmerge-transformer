@@ -1,6 +1,8 @@
 plugins {
     id 'groovy'
     id 'java-gradle-plugin'
+    id 'maven-publish'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 group = 'com.github.unaimillan'
@@ -39,16 +41,16 @@ repositories {
 //    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.9.2'
 //}
 
-def shadowVersion = "7.0.0"
-
 dependencies {
-    compileOnly localGroovy()
-    compileOnly gradleApi()
+    shadow localGroovy()
+    shadow gradleApi()
 
     implementation 'org.apache.groovy:groovy:4.0.14'
+    implementation 'org.apache.ant:ant:1.10.13'
     implementation 'org.codehaus.plexus:plexus-utils:4.0.0'
     implementation 'org.jdom:jdom2:2.0.6.1'
-    implementation("gradle.plugin.com.github.jengelman.gradle.plugins:shadow:$shadowVersion")
+//    implementation("gradle.plugin.com.github.jengelman.gradle.plugins:shadow:7.0.0")
+    implementation 'com.github.johnrengelman:shadow:8.1.1'
 
     testImplementation 'xmlunit:xmlunit:1.6'
     testImplementation 'junit:junit:4.13.1'
