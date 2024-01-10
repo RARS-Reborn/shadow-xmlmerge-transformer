@@ -20,9 +20,9 @@ import org.xml.sax.SAXException
 /**
  * Merges multiple occurrences of some XML file into one.
  * <p>
- * Modified from com.github.jengelman.gradle.plugins.shadow.transformers.XmlAppendingTransformer.groovy
+ * Modified from com.github.jengelman.gradle.plugins.shadow.transformers.XmlAppendingTransformer
  *
- * @author John Engelman
+ * @author Mike Kuskov
  */
 @CacheableTransformer
 class XMLMergeTransformer implements Transformer {
